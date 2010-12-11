@@ -943,13 +943,13 @@ begin
 
     190: begin                      // comment selected
       s := '#' + StringReplace (SynEdit.SelText, #13#10, #13#10'#', [rfReplaceAll]);
-      delete (s, length(s), 1);
+      if s[length(s)] = '#' then delete (s, length(s), 1);
       SynEdit.SelText := s;
     end;
 
     188: begin                      // uncomment selected
       s := StringReplace (SynEdit.SelText, #13#10'#', #13#10, [rfReplaceAll]);
-      delete (s, 1, 1);
+      if s[1] = '#' then delete (s, 1, 1);
       SynEdit.SelText := s;
     end;
 
