@@ -79,6 +79,13 @@
 			</BuildConfiguration>
 		</ItemGroup>
 		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<PropertyGroup>
+			<PostBuildEvent><![CDATA[set VERSION=
+for /f "tokens=2 delims= " %%a in ('git log -1 --abbrev-commit') do (
+    "c:\Program Files\7-Zip\7z" a -tzip "D:\Code\steludio-fork\Release\Steludio.%%a.zip" "D:\Code\steludio-fork\Steludio.exe"
+    exit /b
+)]]></PostBuildEvent>
+		</PropertyGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
 			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
@@ -98,7 +105,7 @@
 						<VersionInfo Name="MajorVer">1</VersionInfo>
 						<VersionInfo Name="MinorVer">0</VersionInfo>
 						<VersionInfo Name="Release">1</VersionInfo>
-						<VersionInfo Name="Build">2</VersionInfo>
+						<VersionInfo Name="Build">7</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">False</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -110,7 +117,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName"/>
 						<VersionInfoKeys Name="FileDescription"/>
-						<VersionInfoKeys Name="FileVersion">1.0.1.2</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.1.7</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>
