@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Buttons, ExtCtrls, SynEdit;
+  Dialogs, StdCtrls, Buttons, ExtCtrls, SynEdit, SynEditTypes;
 
 type
   TSearchReplaceForm = class(TForm)

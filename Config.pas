@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, SynEdit, SynEditHighlighter, SynHighlighterPerl, ComCtrls, SearchReplace, SynEditKeyCmds, Registry,
+  Dialogs, SynEdit, SynEditTypes, SynEditHighlighter, SynHighlighterPerl, ComCtrls, SearchReplace, SynEditKeyCmds, Registry,
   StdCtrls, ExtCtrls, SynHighlighterPHP, ShellApi;
 
 type

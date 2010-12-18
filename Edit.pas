@@ -5,8 +5,9 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, SynEditHighlighter, SynHighlighterPerl,
-  SynEdit, ComCtrls, SearchReplace, SynEditKeyCmds, NewType, NewAction, FormLine, Registry, UnitSettings, ShellApi,
-  SynCompletionProposal, Config, StrUtils, SynHighlighterPHP, SuperObject, ActiveX, ComObj, shdocvw, mshtml;
+  SynEdit, ComCtrls, SynEditTypes, SynEditSearch, SearchReplace, SynEditKeyCmds, NewType, NewAction, FormLine, Registry, UnitSettings, ShellApi,
+  SynCompletionProposal, Config, StrUtils, SynHighlighterPHP, SuperObject, ActiveX, ComObj, shdocvw, mshtml,
+  SynEditMiscClasses;
 
 type
 
@@ -38,6 +39,7 @@ type
     SynCompletionProposal: TSynCompletionProposal;
     SynPHPSyn: TSynPHPSyn;
     EditFilter: TEdit;
+    SynEditSearchUsed: TSynEditSearch;
     procedure ListBoxTypesDblClick(Sender: TObject);
     procedure ListBoxTypesKeyPress(Sender: TObject; var Key: Char);
     procedure ListBoxRolesDblClick(Sender: TObject);
