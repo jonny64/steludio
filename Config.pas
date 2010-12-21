@@ -5,7 +5,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, SynEdit, SynEditTypes, SynEditHighlighter, SynHighlighterPerl, ComCtrls, SearchReplace, SynEditKeyCmds, Registry,
-  StdCtrls, ExtCtrls, SynHighlighterPHP, ShellApi;
+  StdCtrls, ExtCtrls, SynHighlighterPHP, ShellApi, SynEditMiscClasses,
+  SynEditSearch;
 
 type
   TConfigForm = class(TForm)
@@ -18,6 +19,7 @@ type
     Panel3: TPanel;
     EditName: TEdit;
     SynPHPSyn: TSynPHPSyn;
+    SynEditSearchUsed: TSynEditSearch;
     procedure FormKeyDown(Sender: TObject; var Key: Word;
       Shift: TShiftState);
     procedure SynEditKeyDown(Sender: TObject; var Key: Word;
