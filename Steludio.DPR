@@ -10,7 +10,8 @@ uses
   NewAction in 'NewAction.pas' {NewActionForm},
   FormLine in 'FormLine.pas' {Formln},
   UnitSettings in 'UnitSettings.pas' {FormSettings},
-  Edit in 'Edit.pas' {EditForm};
+  Edit in 'Edit.pas' {EditForm},
+  Config in 'Config.pas' {ConfigForm};
 
 {$R *.RES}
 
@@ -23,6 +24,5 @@ begin
   Application.CreateForm(TNewActionForm, NewActionForm);
   Application.CreateForm(TFormln, Formln);
   Application.CreateForm(TFormSettings, FormSettings);
-  Application.CreateForm(TEditForm, EditForm);
   Application.Run;
 end.
