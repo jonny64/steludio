@@ -951,7 +951,7 @@ begin
 
     188: begin                      // uncomment selected
       s := StringReplace (SynEdit.SelText, #13#10'#', #13#10, [rfReplaceAll]);
-      if s[1] = '#' then delete (s, 1, 1);
+      if (length(s) > 0) and (s[1] = '#') then delete (s, 1, 1);
       SynEdit.SelText := s;
     end;
 
