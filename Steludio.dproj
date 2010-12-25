@@ -91,7 +91,7 @@
 		<PropertyGroup>
 			<PostBuildEvent><![CDATA[set VERSION=
 for /f "tokens=2 delims= " %%a in ('git log -1 --abbrev-commit') do (
-    "c:\Program Files\7-Zip\7z" a -tzip "D:\Code\steludio-fork\Release\Steludio.%%a.zip" "D:\Code\steludio-fork\Steludio.exe"
+    "c:\Program Files\7-Zip\7z" a -tzip "$(PROJECTDIR)\Release\Steludio.%%a.zip" "$(OUTPUTPATH)"
     exit /b
 )]]></PostBuildEvent>
 		</PropertyGroup>

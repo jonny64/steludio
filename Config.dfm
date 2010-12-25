@@ -80,6 +80,7 @@ object ConfigForm: TConfigForm
       Margins.Right = 4
       Margins.Bottom = 4
       Align = alClient
+      ActiveLineColor = 15138810
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
