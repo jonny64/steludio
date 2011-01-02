@@ -97,7 +97,7 @@ object ConfigForm: TConfigForm
       Gutter.Visible = False
       Gutter.Width = 0
       Highlighter = SynPerlSyn
-      Options = [eoAutoIndent, eoDragDropEditing, eoEnhanceHomeKey, eoGroupUndo, eoScrollPastEol, eoShowScrollHint, eoTabIndent, eoTrimTrailingSpaces]
+      Options = [eoAutoIndent, eoDragDropEditing, eoEnhanceHomeKey, eoGroupUndo, eoScrollPastEol, eoShowScrollHint, eoSmartTabDelete, eoTabIndent, eoTrimTrailingSpaces]
       RightEdge = 0
       SearchEngine = SynEditSearchUsed
       WantTabs = True
